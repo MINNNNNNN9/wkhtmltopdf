@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REPORT</title>
+    
+     <link rel="stylesheet" href="./static/css/report_goodday.css" type="text/css">
+</head>
+<body>
+    
+    <div class="page">
+        <div class="container">
+            <div class="imgtitle">
+                <img src="./static/img/goodday_logo.png"/>
+            </div>
+           
+
+            <table class="one">
+                <tr>
+                    <td class="col_one">姓名：</td>
+                    <td colspan="3"  class="col_two" id="Name"></td>
+                    <td class="col_five">操作員：</td>
+                    <td class="col_six" id="Operator">oneforty</td>
+                </tr>
+
+                <tr>
+                    <td class="col_one">ID：</td>
+                    <td colspan="3" class="col_two" id="ID">82</td>
+                    <td class="col_five">檢測日期：</td>
+                    <td class="col_even_border" id="Date">2024/09/25</td>
+                </tr>
+
+                <tr>
+                    <td class="col_one">性別：</td>
+                    <td class="col_two" id="Gender">Male</td>
+
+                    <td class="col_three">BMI：</td>
+                    <td  class="col_four" id="bmi"></td>
+
+                    <td class="col_five">檢測時間：</td>
+                    <td class="col_even_border" id="Time">12:15:48</td>
+                </tr>
+
+                <tr>
+                    <td class="col_one">生日：</td>
+                    <td class="col_two" id="Birthday">1899-12-30</td>
+
+                    
+                    <td class="col_three">年齡：</td>
+                    <td  class="col_four">124</td>
+
+                    <td class="col_five">儀器編號：</td>
+                    <td class="col_even_border" id="No">01520055</td>
+                </tr>
+
+
+            </table>
+
+            <table class="two">
+                <tr>
+                    <td bgcolor="#D2F0F0" class="co2_st_1">檢測項目</td>
+                    <td bgcolor="#D2F0F0" class="co2_nd"></td>
+                    <td bgcolor="#D2F0F0" class="co2_rd">標準範圍/單位</td>
+                    <td bgcolor="#D2F0F0" class="co2_th">說明</td>
+                </tr>
+                <tr>
+                    <td class="co2_st">體質量指數 BMI</td>
+                    <td class="co2_nd" id="bmidata"></td>
+                    <td class="co2_rd">18.5~24.0</td>
+                    <td class="co2_th" id="bmi_description"></td>
+                </tr>
+
+                <tr>
+                    <td class="co2_st">心率 Heart Rate</td>
+                    <td class="co2_nd" id="HR">83.2</td>
+                    <td class="co2_rd">60~100 次/分</td>
+                    <td class="co2_th" id="HR_description">正常</td>
+                </tr>
+                <tr>
+                    <td class="co2_st">N-N間距標準差 SDNN</td>
+                    <td class="co2_nd" id="SDNN">34.2</td>
+
+                    <td class="co2_rd">20 ~ 100 ms</td>
+                    <td class="co2_th" id="SDNN_description">正常</td>
+                </tr>
+                <tr>
+                    <td class="co2_st">均方根標準差 RMSSD</td>
+                    <td class="co2_nd" id="RMSSD">20.56</td>
+                    <td class="co2_rd">高於20</td>
+                    <td class="co2_th" id="RMSSD_description" >正常</td>
+                </tr>
+ 
+                <tr>
+                    <td class="co2_st">自律神經年齡 ANS Age</td>
+                    <td class="co2_nd" id="ANSage">30</td>
+                    <td class="co2_rd">低於或等於實際年齡</td>
+                    <td class="co2_th" id="ANSage_description">自律神經年齡年輕化</td>
+                </tr>
+                <tr>
+                    <td class="co2_st" rowspan="2">自律神經總體功能 ANS</td>
+                    <td class="co2_nd_span" id="ANS_1">6.03</td>
+                    <td class="co2_rd_span">平均數值 ms2</td>
+                    <td class="co2_th_span" id="ANS_2_description" rowspan="2">正常</td>
+                </tr>
+                <tr>
+                    <td class="co2_nd_span_2" id="ANS_2">1.46</td>
+                    <td class="co2_rd_span_2">標準差數值 ±1.5σ</td>
+
+                </tr>
+                <tr>
+                    <td class="co2_st" rowspan="2">交感神經功能 SYM</td>
+                    <td class="co2_nd_span" id="SYM_1">57.16</td>
+                    <td class="co2_rd_span">平均數值 %</td>
+                    <td class="co2_th_span" id="SYM_2_description" rowspan="2">正常</td>
+                </tr>
+                <tr>
+                    <td class="co2_nd_span_2" id="SYM_2">0.57</td>
+                    <td class="co2_rd_span_2">標準差數值 ±1.5σ</td>
+
+                </tr>
+                <tr>
+                    <td class="co2_st" rowspan="2">副交感神經功能 VAG</td>
+                    <td class="co2_nd_span" id="VAG_1">5.66</td>
+                    <td class="co2_rd_span">平均數值 ms2</td>
+                    <td class="co2_th_span" id="VAG_2_description" rowspan="2">正常</td>
+                </tr>
+                <tr>
+                    <td class="co2_nd_span_2" id="VAG_2">1.22</td>
+                    <td class="co2_rd_span_2">標準差數值 ±1.5σ</td>
+
+                </tr>
+                <tr>
+                    <td class="co2_st">交感調控 SYM modulation</td>
+                    <td class="co2_nd" id="SYM_m">1.45</td>
+
+                    <td class="co2_rd">0.8~1.5</td>
+                    <td class="co2_th" id="SYM_m_description">正常</td>
+                </tr>
+                <tr>
+                    <td class="co2_st">自律神經偏向 Balance</td>
+                    <td class="co2_nd" id="Balance">-0.65</td>
+
+                    <td class="co2_rd">-1.5~1.5</td>
+                    <td class="co2_th" id="Balance_description">自律神經平衡</td>
+                </tr>
+
+
+            </table>
+
+            <table class="three">
+                <tr>
+                    <td colspan="7" class="border_hrv">HRV Chart</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="border_hrv"><img src="./static/img/taichi_plot.png" height="30%"></td>
+                    <td colspan="4" class="border_hrv"><img src="./static/img/five_power_plot.png" height="30%"></td>
+                </tr>
+                <tr>
+                    <td class="border_hrv">ANS AGE</td>
+                    <td class="border_hrv">HR</td>
+                    <td class="border_hrv">SD</td>
+                    <td class="border_hrv">TP</td>
+                    <td class="border_hrv">VL</td>
+                    <td class="border_hrv">HF</td>
+                    <td class="border_hrv">LF</td>
+                </tr>
+                <tr>
+                    <td class="border_hrv">30</td>
+                    <td class="border_hrv">83.2</td>
+                    <td class="border_hrv"> 34.2</td>
+                    <td class="border_hrv">817</td>
+                    <td class="border_hrv">91</td>
+                    <td class="border_hrv">287</td>
+                    <td class="border_hrv">415</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>        
+   
+
+
+    <div class="newpage">
+        <div class="container">
+            <img src="./static/img/report3.jpg" />
+        </div>
+    </div>
+</body>
+</html>

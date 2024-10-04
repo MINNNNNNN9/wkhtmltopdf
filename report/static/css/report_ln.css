@@ -1,0 +1,215 @@
+:root {
+    --st:45%;
+    --nd:8%;
+    --rd:29%;
+    --th:18%
+}
+
+@page {
+    margin: 0;
+	width: 210mm;
+    height: 297mm;
+	
+}
+
+
+
+body{
+    font-family:Microsoft JhengHei;
+}
+
+table {
+    page-break-inside: avoid;
+
+}
+
+.titleLeft {
+    text-align: center;
+    font-size: 2em;
+
+    
+}
+
+.title_txt{
+    text-align: center;  
+}
+
+.imgtitle {
+    display:block; 
+    margin:auto;
+    width: 30%
+
+}
+
+
+table.one {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table.one td {
+    height: auto;
+    white-space: normal;
+}
+
+td.col_one {
+    width: 25%;
+    text-align: left;
+    height: 30px;
+}
+
+td.col_two {
+    width: 20%;
+    border-bottom: 2px solid #888888;
+    height: 30px;
+    text-align: left;
+}
+
+td.col_five {
+    width: 35%;
+    text-align: left;
+}
+
+td.col_six {
+    border-bottom: 2px solid #888888;
+    width: 20%;
+    text-align: left;
+}
+
+td.col_three {
+    width: 10%;
+    text-align: center;
+    height: 30px;
+}
+
+td.col_four {
+    width: 10%;
+    border-bottom: 2px solid #888888;
+    height: 30px;
+}
+
+
+
+td.col_even_border {
+    width: 30%;
+    border: 1px solid #000000;
+}
+
+table.two {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 10px auto;
+
+}
+
+table.two, td.co2_st, td.co2_nd, td.co2_rd, td.co2_th {
+    border: 1px solid #666666;
+}
+
+
+
+
+
+td.co2_st {
+    width: var(--st);
+    text-align: left;
+    height: 35px;
+}
+td.co2_st_1{
+    width: var(--st);
+    text-align: center;
+    height: 35px;
+}
+td.co2_nd {
+    width: var(--nd);
+    text-align: center;
+}
+
+td.co2_rd {
+    width: var(--rd);
+    text-align: center;
+}
+
+td.co2_th {
+    width: var(--th);
+    text-align: center;
+}
+
+td.co2_nd_span {
+    width: var(--nd);
+    border-right: 1px solid #666666;
+    text-align: center;
+}
+
+td.co2_rd_span {
+    width: var(--rd);
+    text-align: center;
+    border-right: 1px solid #666666;
+}
+
+td.co2_th_span {
+    width: var(--th);
+    text-align: center;
+    border: 1px solid #666666;
+}
+
+td.co2_nd_span_2 {
+    width: var(--nd);
+    text-align: center;
+    border-right: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+
+}
+
+td.co2_rd_span_2 {
+    width: var(--rd);
+    text-align: center;
+    border-right: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+}
+
+td.co2_th_span_2 {
+    width: var(--th);
+    text-align: center;
+    border-right: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+}
+
+table.three {
+    width:95%;
+    text-align:center;
+    border: 3px solid #000000;
+    font-size: 12pt;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+td.border_hrv{
+    border: 1px solid #000000;
+    text-align: center;
+}
+tr.border_hrv{
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+td#bmi_description,#HR_description,#RRIV_description,#ANSage_description,#ANS_2_description,
+#SYM_1_description, #SYM_2_description, #VAG_1_description, #VAG_2_description, #SDNN_description,
+#SYM_m_description ,#Balance_description
+{
+    color:black;
+}
+td#ANS_1_description
+{
+    color:black;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+

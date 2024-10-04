@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <title>REPORT</title> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="https://service.kylab906.com/static/css/report.css" rel="stylesheet" type="text/css"> 
+  <link rel="stylesheet" type="text/css" href="https://service.kylab906.com/Users/YM/Desktop/HtmlToPdf/css/report_in.css">
+ </head> 
+ <body> 
+  <div class="page" size="A4"> 
+   <div class="container"> 
+    <div class="titleLeft">
+     <span>HRV REPORT</span> 
+    </div> 
+    <table class="one"> 
+     <tbody>
+      <tr> 
+       <td class="col_one">姓名：</td> 
+       <td colspan="3" class="col_two" id="Name">郭博昭</td> 
+       <td class="col_five">操作員：</td> 
+       <td class="col_six" id="Operator"></td> 
+      </tr> 
+      <tr> 
+       <td class="col_one">ID：</td> 
+       <td colspan="3" class="col_two" id="ID">789BB267AB</td> 
+       <td class="col_five">檢測日期：</td> 
+       <td class="col_even_border" id="Date">2024/09/24</td> 
+      </tr> 
+      <tr> 
+       <td class="col_one">性別：</td> 
+       <td class="col_two" id="Gender">男</td> 
+       <td class="col_three">BMI：</td> 
+       <td class="col_four" id="bmi">23.15</td> 
+       <td class="col_five">檢測時間：</td> 
+       <td class="col_even_border" id="Time">15:21:42</td> 
+      </tr> 
+      <tr> 
+       <td class="col_one">生日：</td> 
+       <td class="col_two" id="Birthday">1968/03/31</td> 
+       <td class="col_three">年齡：</td> 
+       <td class="col_four">56</td> 
+       <td class="col_five">儀器編號：</td> 
+       <td class="col_even_border" id="No">007F0055</td> 
+      </tr> 
+     </tbody>
+    </table> 
+    <table class="two"> 
+     <tbody>
+      <tr> 
+       <td bgcolor="#D2F0F0" class="co2_st_1">檢測項目</td> 
+       <td bgcolor="#D2F0F0" class="co2_nd"></td> 
+       <td bgcolor="#D2F0F0" class="co2_rd">標準範圍/單位</td> 
+       <td bgcolor="#D2F0F0" class="co2_th">說明</td> 
+      </tr> 
+      <tr> 
+       <td class="co2_st">心率 Heart Rate</td> 
+       <td class="co2_nd" id="HR">91.8</td> 
+       <td class="co2_rd">60~100 次/分</td> 
+       <td class="co2_th" id="HR_description">正常</td> 
+      </tr> 
+      <tr> 
+       <td class="co2_st">正常R-R間距變化 RRIV</td> 
+       <td class="co2_nd" id="RRIV">24.81</td> 
+       <td class="co2_rd">高於15%</td> 
+       <td class="co2_th" id="RRIV_description">正常</td> 
+      </tr> 
+      <tr> 
+       <td class="co2_st">體質量指數 BMI</td> 
+       <td class="co2_nd" id="bmidata">23.15</td> 
+       <td class="co2_rd">18.5~24.0</td> 
+       <td class="co2_th" id="bmi_description">正常範圍</td> 
+      </tr> 
+      <tr> 
+       <td class="co2_st">自律神經年齡 ANS Age</td> 
+       <td class="co2_nd" id="ANSage">46</td> 
+       <td class="co2_rd">低於或等於實際年齡</td> 
+       <td class="co2_th" id="ANSage_description">自律神經年齡年輕化</td> 
+      </tr> 
+      <tr> 
+       <td class="co2_st" rowspan="2">自律神經總體功能 ANS</td> 
+       <td class="co2_nd_span" id="ANS_1">5.18</td> 
+       <td class="co2_rd_span">平均數值 ms2</td> 
+       <td class="co2_th_span" id="ANS_2_description" rowspan="2">正常</td> 
+      </tr> 
+      <tr> 
+       <td class="co2_nd_span_2" id="ANS_2">0.59</td> 
+       <td class="co2_rd_span_2">標準差數值 ±1.5σ</td> 
+      </tr> 
+      <tr> 
+       <td class="co2_st" rowspan="2">交感神經功能 SYM</td> 
+       <td class="co2_nd_span" id="SYM_1">71.7</td> 
+       <td class="co2_rd_span">平均數值 %</td> 
+       <td class="co2_th_span" id="SYM_2_description" rowspan="2">正常</td> 
+      </tr> 
+      <tr> 
+       <td class="co2_nd_span_2" id="SYM_2">1.46</td> 
+       <td class="co2_rd_span_2">標準差數值 ±1.5σ</td> 
+      </tr> 
+      <tr> 
+       <td class="co2_st" rowspan="2">副交感神經功能 VAG</td> 
+       <td class="co2_nd_span" id="VAG_1">4.13</td> 
+       <td class="co2_rd_span">平均數值 ms2</td> 
+       <td class="co2_th_span" id="VAG_2_description" rowspan="2">正常</td> 
+      </tr> 
+      <tr> 
+       <td class="co2_nd_span_2" id="VAG_2">0.05</td> 
+       <td class="co2_rd_span_2">標準差數值 ±1.5σ</td> 
+      </tr> 
+      <tr> 
+       <td class="co2_st">N-N間距標準差 SDNN</td> 
+       <td class="co2_nd" id="SDNN">21.2</td> 
+       <td class="co2_rd">20 ~ 100 ms</td> 
+       <td class="co2_th" id="SDNN_description">正常</td> 
+      </tr> 
+      <tr> 
+       <td class="co2_st">交感調控 SYM modulation</td> 
+       <td class="co2_nd" id="SYM_m">2.85</td> 
+       <td class="co2_rd">0.8~1.5</td> 
+       <td class="co2_th" id="SYM_m_description">偏高</td> 
+      </tr> 
+      <tr> 
+       <td class="co2_st">自律神經偏向 Balance</td> 
+       <td class="co2_nd" id="Balance">1.41</td> 
+       <td class="co2_rd">-1.5~1.5</td> 
+       <td class="co2_th" id="Balance_description">輕微偏向交感</td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+   <div class="container"> 
+    <div class="row"> 
+     <div class="col text-center"> 
+      <p></p>
+      <table align="center" style="border:3px #000000 solid;padding:5px;" rules="all" cellpadding="8" ;>  
+       <tbody>
+        <tr align="center"> 
+         <td colspan="8">HRV Report</td> 
+        </tr> 
+        <tr align="center"> 
+         <td colspan="2"> ANS AGE </td> 
+         <td colspan="6"> 46</td> 
+        </tr> 
+        <tr align="center"> 
+         <td colspan="2"> <img src="https://service.kylab906.com/gettaichi?ratio=0.39855072463768115&amp;age=46" width="100%"></td> 
+         <td colspan="6"> <img src="https://service.kylab906.com/getfiveplot?heart=29&amp;fight=79&amp;vital=62&amp;sex=51&amp;health=42" width="100%"></td> 
+        </tr> 
+        <tr align="center"> 
+         <td colspan="1"> Datadate </td> 
+         <td colspan="1"> Device ID </td> 
+         <td colspan="1"> HR </td> 
+         <td colspan="1"> SD </td> 
+         <td colspan="1"> TP </td> 
+         <td colspan="1"> VL </td> 
+         <td colspan="1"> HF </td> 
+         <td colspan="1"> LF </td> 
+        </tr> 
+        <tr align="center"> 
+         <td colspan="1"> 2024/09/24 </td> 
+         <td colspan="1"> 007F0055 </td> 
+         <td colspan="1"> 91.8 </td> 
+         <td colspan="1"> 21.2 </td> 
+         <td colspan="1"> 487 </td> 
+         <td colspan="1"> 240 </td> 
+         <td colspan="1"> 62 </td> 
+         <td colspan="1"> 177 </td> 
+        </tr> 
+       </tbody>
+      </table> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="newpage" size="A4"> 
+   <div class="container"> 
+    <img src="https://service.kylab906.com/static/img/report3.jpg"> 
+   </div> 
+  </div>  
+ </body>
+</html>
